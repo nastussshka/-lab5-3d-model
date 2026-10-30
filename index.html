@@ -89,16 +89,21 @@ animation-name="Jump"
         <div id="ar-prompt">
           <img src="./ar_hand_prompt.png" alt="">
         </div>
+
 <effect-composer render-mode="quality">
-  <pixelate-effect granularity="8">
-  </pixelate-effect>
+  <bloom-effect
+    strength="1.5"
+    threshold="0.7"
+    radius="0.5">
+  </bloom-effect>
 
   <outline-effect
-    color="#ff00ff"
-    strength="8"
-    smoothing="0">
+    color="#C58B62"
+    strength="2"
+    smoothing="1">
   </outline-effect>
 </effect-composer>
+
 
       </model-viewer>
 
